@@ -190,7 +190,7 @@
 <!-- ==========  BAGIAN 1 BERAKHIR DI SINI  ============= -->
 <!-- =================================================== -->
 
-<body class="h-full font-body text-white bg-dark overflow-x-hidden">
+<body style="overflow: hidden;" class="h-full font-body text-white bg-dark overflow-x-hidden">
   <!-- Toast untuk copy rekening -->
   <div id="copy-toast" class="copy-toast">
       ✓ Nomor rekening disalin!
@@ -880,6 +880,7 @@ el.btnOpen.addEventListener("click", () => {
   isInvitationOpened = true;
   el.cover.style.display = "none";
   el.main.classList.remove("hidden");
+  document.body.style.overflow = "auto"
   el.main.classList.add("animate-fade-in");
 
   updateCountdown();
